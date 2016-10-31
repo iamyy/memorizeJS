@@ -16,3 +16,9 @@ add( 1, 2 ); // first call, remember the result;
 add( 1, 2 ); // second call, cached!
 
 ```
+
+## TODO
+
+- Unit test.
+
+- Support more types of arguments.
