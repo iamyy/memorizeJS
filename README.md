@@ -16,6 +16,26 @@ add( 1, 2 ); // first call, remember the result;
 add( 1, 2 ); // second call, cached!
 
 ```
+## Note
+
+#### 1. Since the result was cached in a hash map, the memorizable function will return the reference of the result:
+
+``` javascript
+function whatever( val ) {
+   return {
+     val : val
+   }
+}
+
+whatever = whatever.memorize();
+
+var firstTimeResult = whatever( 'test' );
+
+var secondTimeResult = whatever( 'test' );
+
+// And this expression will be true: firstTimeResult === secondTimeResult
+
+```
 
 ## TODO
 
