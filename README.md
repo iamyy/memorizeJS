@@ -16,7 +16,7 @@ add( 1, 2 ); // first call, remember the result;
 add( 1, 2 ); // second call, cached!
 
 ```
-## Note
+## Notes
 
 #### 1. Since the result was cached in a hash map, the memorizable function will return the reference of the result. So, it is an implementation of singleton pattern:
 
