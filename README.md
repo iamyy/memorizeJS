@@ -37,6 +37,12 @@ var secondTimeResult = whatever( 'test' );
 
 ```
 
+#### 2. Avoid too much memory usage:
+
+``` javascript
+whatever = whatever.memorize( 1000 ); // The max length of cached results will be limited to 1000.
+```
+
 ## TODO
 
 - Unit test.
